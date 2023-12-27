@@ -150,6 +150,10 @@ int AFFIX_VERSION(foo)(int a, int b);
 #define foo(a, b) (AFFIX_VERSION(foo)(a, b))
 ```
 
+> [!WARN]
+>
+> The `1.` way could cause bloated software and you'll need to spend more time versioning the code. Please follow the `2.` way.
+
 ## Adding a `Cube` project as thirdparty library
 
 Copy the `Cube` project to `cube` folder. Clean the project after adding, removing, modifying thirdparty libraries.
